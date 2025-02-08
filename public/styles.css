@@ -1,0 +1,333 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    margin: 0 0 20px 0;
+}
+
+/* Navbar Styles */
+/* Sleek Animated Gradient Navbar */
+.navbar {
+    background: linear-gradient(135deg, #1c1c2b, #004e92, #00c6ff, #0072ff, #5f2c82);
+    background-size: 400% 400%;
+    animation: techGradient 10s ease infinite; /* Smooth, subtle gradient animation */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: background-color 0.3s ease;
+}
+
+/* Animation for the gradient background */
+@keyframes techGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar Link Styles with Tech-Inspired Hover Effects */
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 198, 255, 0.4); /* Subtle neon glow */
+}
+
+.navbar .nav-links li a:hover {
+    color: #00c6ff; /* Professional blue glow */
+    transform: scale(1.1); /* Slightly increase size on hover */
+    text-shadow: 0 0 10px rgba(0, 198, 255, 0.8), 0 0 20px rgba(0, 198, 255, 0.5); /* Glowing blue effect */
+}
+
+/* Navbar Logo with Tech Neon Glow */
+.navbar .logo {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0, 114, 255, 0.6); /* Professional tech neon glow */
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar .logo:hover {
+    color: #0072ff; /* Subtle blue change on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+    text-shadow: 0 0 12px rgba(0, 114, 255, 0.8), 0 0 24px rgba(0, 114, 255, 0.6); /* Stronger neon glow on hover */
+}
+
+/* Box Shadow for Depth */
+.navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 22px; /* Reduced size */
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Reduced gap */
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px; /* Reduced size */
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #ff4500;
+}
+
+/* Adjusted Hero Section with Background */
+.hero {
+    height: 50vh; /* Limit height to prevent it from being too large */
+    background: url('/images/hero-bg.jpg') no-repeat center center/cover; /* Add your background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0; /* Remove unnecessary padding */
+}
+
+.hero h1 {
+    font-size: 36px; /* Keep the text size reasonable */
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px; /* Reduced size for description */
+    color: white;
+    margin: 0; /* Remove unnecessary margin */
+}
+
+.cta-button {
+    padding: 8px 16px; /* Reduced padding */
+    background-color: #ff4500;
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Reduced size */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e03d00;
+    transform: scale(1.05);
+}
+
+/* About Me Section */
+.about-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about h2 {
+    font-size: 32px; /* Reduced size */
+}
+
+.about p {
+    font-size: 16px; /* Reduced size */
+}
+
+/* GitHub Section */
+section {
+    padding: 80px 0; /* Reduced padding */
+    text-align: center;
+}
+
+/* GitHub Section - MacBook Terminal UI */
+.github {
+    background-color: #1e1e1e; /* Dark terminal-like background */
+    color: #00ff00; /* Terminal-style green text */
+    padding: 80px 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Terminal window header */
+.github::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #d1d1d1;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Terminal header buttons */
+.terminal-buttons {
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Red close button with X */
+.terminal-button.close {
+    background-color: #ff5f57;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    color: #8d0202;
+}
+
+/* Yellow minimize button with – */
+.terminal-button.minimize {
+    background-color: #ffbd2e;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #835f00;
+}
+
+/* Green maximize button with expand icon */
+.terminal-button.maximize {
+    background-color: #28c940;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    color: #146f3b;
+}
+
+/* GitHub Section Text */
+.github h2 {
+    font-size: 28px;
+    color: #00ff00; /* Terminal-style green text */
+    margin-bottom: 40px;
+}
+
+/* Terminal Command-Like Button */
+.github a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #00ff00;
+    padding: 12px 30px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.github a:hover {
+    background-color: #00ff00;
+    color: #1e1e1e; /* Inverse color on hover */
+}
+/* Contact Me Section */
+.contact {
+    background-color: #ffffff; /* Light background */
+    padding: 100px 0;
+    color: #333;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0077cc;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555; /* Slightly darker text */
+}
+
+.contact a {
+    color: white;
+    background-color: #0077cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact a:hover {
+    background-color: #005a9c;
+    transform: scale(1.1);
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #005a9c;
+    transform: scale(1.1);
+}
